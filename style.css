@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+  margin: auto;
+  border: solid;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgb(0, 0, 0.8);
+  background-color: black;
+  color: white;
+  font-size: 50px;
+}
+.container h1 {
+  margin-bottom: 10px;
+}
+input[type="amount"],
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+select {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  cursor: pointer;
+}
+.showExpenses {
+  border: solid#ccc;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 30px;
+  box-shadow: 0 4px 4px rgb(114, 114, 226);
+  font-size: 16px;
+}
+.showExpenses button {
+  margin: 10px;
+  background-color: red;
+  color: black;
+
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid#ccc;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+  }
+  .container h2 {
+    font-size: 1.2rem;
+  }
+  .container p {
+    font-size: 1rem;
+  }
+  .container button {
+    font-size: 1rem;
+    margin: 20px 0px;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+  }
+  form span {
+    font-size: 1rem;
+    margin: 10px 0px;
+  }
+  select {
+    padding: 8px;
+    font: 1em sans-serif;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+}
